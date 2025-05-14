@@ -12,6 +12,9 @@ def add(array):
     return rc
 
 #### Solution
+# Let n represents the size of the array
+# Let T(n) represents the number of operations performed by the 
+# add function when given an array of size n.
 def add(array):
     rc = 0
     for i in range(len(array)):
