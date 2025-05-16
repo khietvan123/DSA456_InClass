@@ -51,7 +51,7 @@ def Factorial(n):
 
 # T(1) = 3
 
-# T(2) = 6+3
+# T(2) = 6 + 3
 # T(3) = 6 + 6 + 3
 # T(4) = 6 + 6 + 6 + 3
 # T(5) = 6 + 6 + 6 + 6 + 3
@@ -61,9 +61,29 @@ def Factorial(n):
 #     = 6(n-1) + 3
 #     = 6n - 3          For all n > 1
 #     = 3n - 1
-
+1
 # Therefore T(n) is 0(n)
+
+#FIBONACCI
+def Fibonacci(n):
+    if n == 0:                              # 1
+        return 0                            # 1
+    if n == 1:                              # 1
+        return 1                            # 1
+    return Fibonacci(n-1) + Fibonacci(n-2)  #T(n-1) + T(n-2) + 5
+
+# T(n) = 1 + 1 + 1 + T(n-1) + T(n-2) + 1 = T(n-1) + T(n-2) + 4
+
+# T(1) = 4
+# ...
 
 
 print(Factorial(4))
+
+# Note:
+# Before class do the following function iteratively and recursively and analyze both
+# function return base^n
+# def power(base, n)
+    
+# Challenge: Write power() recursively so that its run time is better than O(n)
         
